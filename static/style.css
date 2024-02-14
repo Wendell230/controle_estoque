@@ -15,7 +15,7 @@
   .navbar-expand-lg .navbar-collapse .nav-link {
     background: linear-gradient(0deg, rgba(241,8,8,1) 36%, rgba(190,0,0,1) 100%);
   }
-  .btn-info {
+  .btn-info, .btn-success {
     background: linear-gradient(0deg, rgba(241,8,8,1) 36%, rgba(190,0,0,1) 100%);
     border-color:red;
   }
