@@ -1,0 +1,31 @@
+*,body{
+    background:#fff;
+    color:#000;
+  }
+  .my-card:hover{
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+}
+  .bg-info{
+    background: linear-gradient(0deg, rgba(241,8,8,1) 36%, rgba(190,0,0,1) 100%);
+  }
+  .container{
+    background: linear-gradient(0deg, rgba(241,8,8,1) 36%, rgba(190,0,0,1) 100%);
+  }
+  .navbar-expand-lg .navbar-collapse .nav-link {
+    background: linear-gradient(0deg, rgba(241,8,8,1) 36%, rgba(190,0,0,1) 100%);
+  }
+  .btn-info {
+    background: linear-gradient(0deg, rgba(241,8,8,1) 36%, rgba(190,0,0,1) 100%);
+    border-color:red;
+  }
+  .btn-info:hover{
+    background: linear-gradient(0deg, rgb(196, 106, 106) 36%, rgb(218, 77, 77) 100%);
+    border-color:rgb(206, 124, 124);
+  }
+ 
+  @media (min-width: 992px){
+  .navbar-expand-lg .navbar-collapse {
+    background: linear-gradient(0deg, rgba(241,8,8,1) 36%, rgba(190,0,0,1) 100%);
+    }
+  }
