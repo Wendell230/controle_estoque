@@ -23,9 +23,10 @@
     background: linear-gradient(0deg, rgb(196, 106, 106) 36%, rgb(218, 77, 77) 100%);
     border-color:rgb(206, 124, 124);
   }
- 
+
   @media (min-width: 992px){
   .navbar-expand-lg .navbar-collapse {
     background: linear-gradient(0deg, rgba(241,8,8,1) 36%, rgba(190,0,0,1) 100%);
     }
+  
   }

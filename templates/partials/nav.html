@@ -1,5 +1,6 @@
  <!--Navbar-->
  <nav class="navbar navbar-expand-lg navbar-info bg-info">
+    {% if user.is_authenticated %}
     <div class="container">
         <a class="navbar-brand text-white" href="{% url 'dashboard-index' %}">W_Inventario</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -20,10 +21,20 @@
                             class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Logout</a>
+                    <a class="nav-link text-white" href="{% url 'user-logout' %}">Logout</a>
                 </li>
             </ul>
-
+            {% else %}
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="{% url 'user-register' %}" style = "background: linear-gradient(0deg, rgba(241,8,8,1) 36%, rgba(190,0,0,1) 100%);">Cadastrar <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="{% url 'user-login' %}" style= "background: linear-gradient(0deg, rgba(241,8,8,1) 36%, rgba(190,0,0,1) 100%);">Login</a>
+                </li>
+            </ul>
+            {% endif %}
         </div>
     </div>
 </nav>
